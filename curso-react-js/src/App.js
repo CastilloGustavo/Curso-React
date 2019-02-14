@@ -21,10 +21,17 @@ class Hello extends Component {
 class Text extends Component {
   render() {
     //const resultText = this.props.boolean ? "Cliente" : "Vendedor"
-    const arrayOfNumber = this.props.arrayOfNumber.map(x => x *2);
+    const {
+      arrayOfNumber,
+      objectwithinfo,
+      title,
+      multiplicar} = this.props;
+
+    const arrayOfNumberTec = arrayOfNumber.map(multiplicar);
     return <div>
-     <p>{arrayOfNumber.join(", ")}</p>
-     <p>{this.props.objectwithinfo.key}</p>
+     {title}
+     <p>{arrayOfNumberTec.join(", ")}</p>
+     <p>{objectwithinfo.key}</p>
     </div>;
   }
 }
@@ -48,7 +55,9 @@ class App extends Component {
           text="Soy texto"
           objectwithinfo={{key:"Soy key 1",key2:"Soy key2"}}
           number={2}
+          multiplicar={(number)=> number * 3}
           boolean={true}
+          title={<h1>Propio de React </h1>}
           />
       </div>
     );
