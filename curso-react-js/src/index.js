@@ -7,7 +7,9 @@ import './index.css';
 //import AppListados from './AppListados';
 //import AppEventos from './AppEventos';
 //import AppFormulario from './sections/AppFormulario';
-import AppChildrenProps from './sections/ChildrenProps';
+//import AppChildrenProps from './sections/ChildrenProps';
+//import FeachComponent from './sections/Feach';
+import ComponentWillUpdate from './sections/life-cycle/ComponentWillUpdate';
 
 
 
@@ -22,7 +24,11 @@ import * as serviceWorker from './serviceWorker';
 //ReactDOM.render(<AppListados />, document.getElementById('root'));
 //ReactDOM.render(<AppEventos />, document.getElementById('root'));
 //ReactDOM.render(<AppFormulario />, document.getElementById('root'));
-ReactDOM.render(<AppChildrenProps />, document.getElementById('root'));
+//ReactDOM.render(<AppChildrenProps />, document.getElementById('root'));
+//ReactDOM.render(<FeachComponent />, document.getElementById('root'));
+ReactDOM.render(<ComponentWillUpdate />, document.getElementById('root'));
+
+
 
 
 

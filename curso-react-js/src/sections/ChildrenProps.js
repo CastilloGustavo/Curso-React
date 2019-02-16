@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+
+
 class Box extends Component{
   render(){
     return(
@@ -22,6 +24,7 @@ class Artical extends Component{
       children
     } = this.props;
     return(
+      <div>
         <section style={{border:'1px solid #00F7', margin :5 ,padding : 5}}>
           <h2>{title}</h2>
           {autor && <p><em>Escrito por {autor}</em></p>}
@@ -30,6 +33,7 @@ class Artical extends Component{
             {children}
           </artical>
         </section>
+        </div>
     )
   }
 }

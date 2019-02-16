@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ComponentWillAmount from './life-cycle/ComponentWillAmount.js';
 
 class LoginButton extends Component  {
   render() {
@@ -41,7 +42,8 @@ export default class ConditionalSection extends Component{
     return(
       <div>
        <h4>Conditional Section </h4>
-       {conditionalComponent}
+       {conditionalComponent}       
+       <ComponentWillAmount/>
       </div>
     )
   }
